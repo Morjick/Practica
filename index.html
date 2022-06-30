@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Practica</title>
+</head>
+<body>
+
+  <h1>Задание 1.</h1>
+  <p>Выводить все посты, приходящие с сервера в блоге с id="posts_container" в следующем формате:</p>
+
+  <section class="exemple" id="exemple-1">
+    <div id="post-697" class="post">
+      <div class="post_header">
+        <h3>Sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
+        <span>userId: 1</span>
+      </div>
+      <p>quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+    </div>
+  </section>
+
+  <h2>Пояснение</h2>
+  <p>В app.js находится переменная "data" - являющаяся объектом, в котором находятся рабочие переменные, создающиеся при инициализации страницы. Переменная-массив posts содержит в себе 100 постов в формате объектов javascript, где title - заголовок, body - тело поста, id - его индентификационный немер и userId - номер для индефикации пользователя, написавшего пост.</p>
+
+  <h2>Может быть полезно</h2>
+  <p><a target="_blank" href="https://learn.javascript.ru/modifying-document">https://learn.javascript.ru/modifying-document</a> - изменение страницы </p>
+  <p><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/API/Document/createElement">https://developer.mozilla.org/ru/docs/Web/API/Document/createElement</a> - создание элементов страницы </p>
+  <p><a target="_blank" href="https://habr.com/ru/post/247857/">https://habr.com/ru/post/247857/</a> - работа с массивами</p>
+
+  <h1>Тут будет твоё задание:</h1>
+
+  <section class="quest">
+    <div id="posts_container"></div>
+  </section>
+
+  <div class="br"></div>
+  
+  <script type="module" src="vendor/app.js"></script>
+</body>
+</html>
